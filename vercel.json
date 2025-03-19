@@ -12,8 +12,8 @@
   ],
   "routes": [
     {
-      "src": "/journeybuilder/execute",
-      "dest": "/routes/activity.js"
+      "src": "/routes/activity.js",
+      "dest": "/routes/index.html"
     },
     {
       "src": "/journeybuilder/save",
@@ -21,19 +21,19 @@
     },
     {
       "src": "/journeybuilder/publish",
-      "dest": "/routes/activity.js"
+      "dest": "/routes/publish.js"
     },
     {
       "src": "/journeybuilder/validate",
-      "dest": "/routes/activity.js"
+      "dest": "/routes/validate.js"
     },
     {
       "src": "/journeybuilder/stop",
-      "dest": "/routes/activity.js"
+      "dest": "/routes/stop.js"
     },
     {
       "src": "/journeybuilder/ui/index.html",
-      "dest": "/routes/activity.js"
+      "dest": "/public/journeybuilder/ui/index.html"
     }
   ]
 
