@@ -20,7 +20,7 @@
     "execute": {
       "inArguments": [],
       "outArguments": [],
-      "url": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/execute",
+      "url": "https://decilio-teste-9890f3b70eec.herokuapp.com/journeybuilder/execute",
       "verb": "POST",
       "body": "",
       "header": "",
@@ -32,22 +32,22 @@
   "configurationArguments": {
     "applicationExtensionKey": "3fda6bd7-0240-4273-827b-89d178e676b4",
     "save": {
-      "url": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/save",
+      "url": "https://decilio-teste-9890f3b70eec.herokuapp.com/journeybuilder/save",
       "verb": "POST",
       "useJwt": true
     },
     "publish": {
-      "url": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/publish",
+      "url": "https://decilio-teste-9890f3b70eec.herokuapp.com/journeybuilder/publish",
       "verb": "POST",
       "useJwt": true
     },
     "validate": {
-      "url": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/validate",
+      "url": "https://decilio-teste-9890f3b70eec.herokuapp.com/journeybuilder/validate",
       "verb": "POST",
       "useJwt": true
     },
     "stop": {
-      "url": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/stop",
+      "url": "https://decilio-teste-9890f3b70eec.herokuapp.com/journeybuilder/stop",
       "verb": "POST",
       "useJwt": true
     }
@@ -60,7 +60,7 @@
   ],
   "userInterfaces": {
     "configModal": {
-      "url": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/ui/index.html",
+      "url": "https://decilio-teste-9890f3b70eec.herokuapp.com/journeybuilder/ui/index.html",
       "height": 600,
       "width": 600,
       "fullscreen": false
