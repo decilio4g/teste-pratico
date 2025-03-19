@@ -31,12 +31,9 @@ router.post("/login", function (req, res) {
   res.redirect("/");
 });
 
-// Rota para logout (GET)
-router.get("/logout", function (req, res) {
-  if (req.session) {
-    req.session.token = "";
-  }
-  res.redirect("/");
+router.get("journeybuilder/ui/index.html", (req, res) => {
+  const JWT = require(Path.join(__dirname, "..", "public", "index.html")); // Para decodificar tokens JWT
+  return res.render(JWT);
 });
 
 // Rotas da custom activity do Journey Builder

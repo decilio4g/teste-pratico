@@ -60,7 +60,7 @@
   ],
   "userInterfaces": {
     "configModal": {
-      "url": "https://decilio-teste-9890f3b70eec.herokuapp.com/journeybuilder/ui/index.html",
+      "url": "https://decilio-teste-9890f3b70eec.herokuapp.com/",
       "height": 600,
       "width": 600,
       "fullscreen": false
