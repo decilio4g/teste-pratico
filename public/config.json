@@ -20,7 +20,7 @@
     "execute": {
       "inArguments": [],
       "outArguments": [],
-      "url": "https://api-rd-internal-stg.raiadrogasil.io/v1/api/msatomjavacommunication/custom-messaging/journeybuilder/execute",
+      "url": "https://decilio-teste.netlify.app/journeybuilder/execute",
       "verb": "POST",
       "body": "",
       "header": "",
@@ -30,24 +30,24 @@
     }
   },
   "configurationArguments": {
-    "applicationExtensionKey": "065843ec-a207-4837-b0c4-153c6a7080af",
+    "applicationExtensionKey": "3fda6bd7-0240-4273-827b-89d178e676b4",
     "save": {
-      "url": "https://api-rd-internal-stg.raiadrogasil.io/v1/api/msatomjavacommunication/custom-messaging/journeybuilder/save",
+      "url": "https://decilio-teste.netlify.app/journeybuilder/save",
       "verb": "POST",
       "useJwt": true
     },
     "publish": {
-      "url": "https://api-rd-internal-stg.raiadrogasil.io/v1/api/msatomjavacommunication/custom-messaging/journeybuilder/publish",
+      "url": "https://decilio-teste.netlify.app/journeybuilder/publish",
       "verb": "POST",
       "useJwt": true
     },
     "validate": {
-      "url": "https://api-rd-internal-stg.raiadrogasil.io/v1/api/msatomjavacommunication/custom-messaging/journeybuilder/validate",
+      "url": "https://decilio-teste.netlify.app/journeybuilder/validate",
       "verb": "POST",
       "useJwt": true
     },
     "stop": {
-      "url": "https://api-rd-internal-stg.raiadrogasil.io/v1/api/msatomjavacommunication/custom-messaging/journeybuilder/stop",
+      "url": "https://decilio-teste.netlify.app/journeybuilder/stop",
       "verb": "POST",
       "useJwt": true
     }
@@ -60,7 +60,7 @@
   ],
   "userInterfaces": {
     "configModal": {
-      "url": "https://api-rd-internal-stg.raiadrogasil.io/v1/api/msatomjavacommunication/custom-messaging/journeybuilder/ui/index.html",
+      "url": "https://decilio-teste.netlify.app/journeybuilder/ui/index.html",
       "height": 600,
       "width": 600,
       "fullscreen": false
