@@ -39,6 +39,8 @@ router.get('/logout', function (req, res) {
 });
 
 // Rotas da custom activity do Journey Builder
+router.get("/journeybuilder/get", () => console.log("está funcional")); // Salva a configuração
+
 router.post('/journeybuilder/save', activity.save); // Salva a configuração
 router.post('/journeybuilder/execute', activity.execute); // Executa a atividade
 router.post('/journeybuilder/publish', activity.publish); // Publica a atividade
