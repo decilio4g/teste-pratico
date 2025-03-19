@@ -13,27 +13,27 @@
   "routes": [
     {
       "src": "/journeybuilder/execute",
-      "dest": "/routes/execute.js"
+      "dest": "/routes/activity.js"
     },
     {
       "src": "/journeybuilder/save",
-      "dest": "/routes/save.js"
+      "dest": "/routes/activity.js"
     },
     {
       "src": "/journeybuilder/publish",
-      "dest": "/routes/publish.js"
+      "dest": "/routes/activity.js"
     },
     {
       "src": "/journeybuilder/validate",
-      "dest": "/routes/validate.js"
+      "dest": "/routes/activity.js"
     },
     {
       "src": "/journeybuilder/stop",
-      "dest": "/routes/stop.js"
+      "dest": "/routes/activity.js"
     },
     {
       "src": "/journeybuilder/ui/index.html",
-      "dest": "/public/journeybuilder/ui/index.html"
+      "dest": "/routes/activity.js"
     }
   ]
 
