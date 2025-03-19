@@ -32,17 +32,6 @@
       "dest": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/ui/index.html"
     }
   ]
-  // "headers": [
-  //   {
-  //     "source": "/journeybuilder/*",
-  //     "headers": [
-  //       {
-  //         "key": "Content-Type",
-  //         "value": "application/json"
-  //       }
-  //     ]
-  //   }
-  // ]
 }
 
 
