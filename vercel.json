@@ -35,16 +35,6 @@
       "src": "/journeybuilder/ui/index.html",
       "dest": "/public/journeybuilder/ui/index.html"
     }
-  ],
-  "headers": [
-    {
-      "source": "/journeybuilder/*",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/json"
-        }
-      ]
-    }
   ]
+
 }
