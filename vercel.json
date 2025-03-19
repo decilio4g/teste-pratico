@@ -1,0 +1,46 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/journeybuilder/execute",
+      "dest": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/execute"
+    },
+    {
+      "src": "/journeybuilder/save",
+      "dest": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/save"
+    },
+    {
+      "src": "/journeybuilder/publish",
+      "dest": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/publish"
+    },
+    {
+      "src": "/journeybuilder/validate",
+      "dest": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/validate"
+    },
+    {
+      "src": "/journeybuilder/stop",
+      "dest": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/stop"
+    },
+    {
+      "src": "/journeybuilder/ui/index.html",
+      "dest": "https://teste-pratico-flame-eight.vercel.app/journeybuilder/ui/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/journeybuilder/*",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    }
+  ]
+}
