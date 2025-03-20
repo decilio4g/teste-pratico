@@ -69,10 +69,12 @@ exports.save = function (req, res) {
 // Endpoint para executar a atividade (envia notificação ao app do cliente via middleware)
 exports.execute = function (req, res) {
   logData(req);
-  console.log("execute request:", JSON.stringify(req.body));
-
+  console.log("REQ BODY LINHA 72", req.body);
+  const teste =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE0ODUxNDA5ODQsImlhdCI6MTQ4NTEzNzM4NCwiaXNzIjoiYWNtZS5jb20iLCJzdWIiOiIyOWFjMGMxOC0wYjRhLTQyY2YtODJmYy0wM2Q1NzAzMThhMWQiLCJhcHBsaWNhdGlvbklkIjoiNzkxMDM3MzQtOTdhYi00ZDFhLWFmMzctZTAwNmQwNWQyOTUyIiwicm9sZXMiOltdfQ.Mp0Pcwsz5VECK11Kf2ZZNF_SMKu5CgBeLN9ZOP04kZo";
   // Valida o token JWT
-  JWT(req.body, process.env.jwtSecret, (err, decoded) => {
+
+  JWT(req.body, teste, (err, decoded) => {
     if (err) {
       console.error("Erro ao validar JWT:", err);
       return res.status(401).end();
@@ -80,7 +82,6 @@ exports.execute = function (req, res) {
 
     if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
       var decodedArgs = decoded.inArguments[0];
-      console.log("inArguments:", JSON.stringify(decoded.inArguments));
 
       const payload = {
         template: decodedArgs["template"],
@@ -91,12 +92,11 @@ exports.execute = function (req, res) {
         vucCode: decodedArgs["vucCode"], // vucCode vindo da jornada
         brand: decodedArgs["brand"],
       };
-
-      console.log("Payload enviado ao middleware:", JSON.stringify(payload));
+      console.log("REQ BODY LINHA 95", 95);
 
       const headers = {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.MIDDLEWARE_AUTH_TOKEN}`, // Substitua por token do middleware
+        Authorization: "basic cmQtc3RnOnNlbnNlZGlh", // Substitua por token do middleware
       };
 
       // Envia a notificação ao middleware (endpoint genérico, substitua pelo real)

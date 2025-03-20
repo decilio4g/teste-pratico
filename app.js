@@ -14,6 +14,7 @@ app.set('port', process.env.PORT || 3000);
 
 // Configura o parser de corpo JWT (necessário para o Journey Builder)
 app.use(bodyParser.raw({ type: 'application/jwt' }));
+// app.use(bodyParser.json());  // Para JSON
 
 // Serve arquivos estáticos da pasta public (UI e JS)
 app.use(express.static(path.join(__dirname, 'public')));

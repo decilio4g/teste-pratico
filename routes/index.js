@@ -31,11 +31,6 @@ router.post("/login", function (req, res) {
   res.redirect("/");
 });
 
-router.get("journeybuilder/ui/index.html", (req, res) => {
-  const JWT = require(Path.join(__dirname, "..", "public", "index.html")); // Para decodificar tokens JWT
-  return res.render(JWT);
-});
-
 // Rotas da custom activity do Journey Builder
 router.get("/journeybuilder/get", (req, res) => {
   res.json({ data: "API ONLINE" });
